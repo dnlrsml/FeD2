@@ -9,43 +9,53 @@
     <link rel="stylesheet" href="Relay-Bold.ttf">
     <link rel="stylesheet" href="../Pembroke-Regular.ttf">
     <link rel="stylesheet" href="../Pembroke-Medium.ttf">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+    <script src="script.js"></script>
     <header>
 
 
         <h1>EUROSTAR</h1>
-        <p>Voor ervaringen onderweg</p>
-        <form>
+        <p>Ervaringen voor onderweg</p>
+        <!--<form>
             <input type="text" placeholder="Zoeken..">
-        </form>
-        <!--         <button class="hamburger"><img src="/img/hamburger.png" alt=""></button> -->
+        </form>-->
+        <nav>
 
-        <ul class="hamburger-menu">
-            <li>
-                <a href="index.html">Home</a>
-            </li>
-            <li>
-                <a href="favorieten.html">Mijn Favorieten</a>
-            </li>
-            <li>
-                <a href="over.html">Over</a>
-            </li>
-            <li>
-                <a href="login.html">Inloggen</a>
-            </li>
-        </ul>
-
-
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="favorieten.html">Favorieten</a>
+                </li>
+                <li>
+                    <a href="over.html">Over</a>
+                </li>
+                <li>
+                    <a href="login.html">Inloggen</a>
+                </li>
+            </ul>
+        </nav>
+        <button>
+            <object data="your.svg" type="image/svg+xml">
+                <img src="/img/magnifying-glass.svg" />
+            </object>
+        </button>
     </header>
     <h2>99 VERHALEN VOOR ONDERWEG</h2>
-    <div id="filter">
-        <button type="button">FILTEREN</button>
-        <button type="button">SORTEREN</button>
-    </div>
+
+
+
     <main>
+        <section>
+            <button type="button">FILTEREN</button>
+            <button type="button">SORTEREN</button>
+        </section>
+
 
 
 
@@ -101,25 +111,34 @@
 
 
     </main>
-    <button>LAAD MEER VERHALEN</button>
+    <section>
+        <button>LAAD MEER VERHALEN</button>
+    </section>
+
     <footer>
         <p>Foto's: ©Eurostar; ©Eurostar; ©Eurostar; ©Eurostar; ©Getty; ©Shutterstock; ©Shutterstock; ©Shutterstock;</p>
         <p> © 2018 Eurostar International Ltd. Alle rechten voorbehouden</p>
     </footer>
 
+
     <form>
+        <button>
+            <object data="your.svg" type="image/svg+xml">
+                <img src="/img/cancel.svg" />
+            </object>
+        </button>
         <fieldset>
             <legend>Leesduur</legend>
-            <input type="checkbox" name="leesduur" value="> 1 min" checked>> 1 minuut
-            <input type="checkbox" name="leesduur" value="2 min">2 minuten
-            <input type="checkbox" name="leesduur" value="> 3 min">> 3 minuten
+            <label> <input type="checkbox" name="leesduur" value="> 1 min" checked>> 1 minuut</label>
+            <label> <input type="checkbox" name="leesduur" value="2 min">2 minuten</label>
+            <label> <input type="checkbox" name="leesduur" value="> 3 min">> 3 minuten</label>
         </fieldset>
 
         <fieldset>
             <legend>Kleur</legend>
-            <input type="checkbox" name="kleur" value="> 1 min" checked>Kleurrijk
-            <input type="checkbox" name="kleur" value="2 min">Grauw
-            <input type="checkbox" name="kleur" value="> 3 min">Zwart-Wit
+            <label><input type="checkbox" name="kleur" value="> 1 min" checked>Kleurrijk</label>
+            <label> <input type="checkbox" name="kleur" value="2 min">Grauw</label>
+            <label> <input type="checkbox" name="kleur" value="> 3 min">Zwart-Wit</label>
         </fieldset>
 
         <fieldset>
@@ -135,7 +154,10 @@
             <label> <input type="checkbox" name="leesduur" value="> 3 min">Verhaal</label>
             <label> <input type="checkbox" name="leesduur" value="> 3 min">Dialoog</label>
         </fieldset>
+        <button>Toon X Verhalen</button>
     </form>
 </body>
+
+
 
 </html>

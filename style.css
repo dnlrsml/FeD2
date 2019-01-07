@@ -2,14 +2,19 @@ body,
 html {
     margin: 0;
     padding: 0;
-
-
 }
 
 main {
     display: grid;
     grid-template-columns: 100%;
+    margin-left: 2.18em;
+    margin-right: 2.18em;
 
+}
+
+a {
+    text-decoration: none;
+    color: #34405e;
 }
 
 article {
@@ -32,15 +37,10 @@ article img {
     height: 10em;
 }
 
-header button {
-    width: 1.68em;
-    height: 1.68em;
-    background-color: #09173b;
-    border-style: none;
-    padding: 0;
-    object-fit: scale-down;
-}
+main button:nth-child(-n+2) {
+    width: 9em;
 
+}
 
 img {
     width: 100%;
@@ -49,7 +49,6 @@ img {
 
 header {
     background-color: #09173b;
-
 }
 
 h1 {
@@ -61,14 +60,18 @@ h1 {
     text-align: center;
     transition: 0.7s;
     margin-top: 0;
-
 }
 
 h2 {
     font-family: 'Aspect', sans-serif;
-
-    color: dimgray;
-
+    margin-left: 1em;
+    color: white;
+    background-image: url("https://cdn.aarp.net/content/dam/aarp/money/budgeting_savings/2016/04/1140-yeager-sell-your-used-books.imgcache.rev6feda141288df73e8fd100822bb375ea.jpg");
+    padding: 1.25em;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+    margin: 0;
+    font-size: 2.25em;
 }
 
 
@@ -81,8 +84,6 @@ body section:nth-child(2) h2 {
     background-size: 70%;
     color: white;
     height: 8, 25em;
-
-
 }
 
 h3 {
@@ -90,20 +91,29 @@ h3 {
     font-size: 1.5em;
     margin-left: 1em;
     font-weight: bolder;
-
 }
 
 button {
-    background-color: #f9dc2f;
-    padding: 1em;
-    display:
-
-        font-family: "Pembroke", sans-serif;
-    font-weight: bold;
+    background-color: #2eb6c8;
+    padding-left: 1.875em;
+    padding-right: 1.875em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 2.25em;
+    font-family: "Pembroke", sans-serif;
+    color: white;
     font-size: 1em;
-    border-bottom: 2px solid;
-    border-right: 2px solid;
-    border-color: #dcc228;
+    border: none;
+}
+
+
+
+header p {
+    color: #f8db2d;
+    margin: auto;
+    width: 14em;
+    margin-top: -3em;
+    font-family: 'Aspect-Light'
 }
 
 p {
@@ -112,81 +122,91 @@ p {
     margin-left: 1.5em;
 }
 
-input {
-    min-width: 20em;
-    padding-left: 1.25em;
-    padding-right: 1.25em;
-    padding-bottom: 1em;
-    padding-top: 1em;
-    border-radius: 0.2em;
-    border-color: cyan;
-    border-width: 1px;
-    background-color: #d3e8ee;
-    font-family: 'Pembroke', sans-serif;
-    font-size: 1em;
-    margin-left: 1em;
 
-}
 
-article:hover {
-    filter: brightness(110%);
-}
+article:hover {}
 
 footer {
     font-size: 0.75em;
-
 }
 
 ul {
-
     display: flex;
     flex-direction: row;
     margin: auto;
     padding: 0;
 
-
 }
 
 li {
     margin: .5em;
+    margin-bottom: 0;
+    margin-top: 1em;
     background-color: #34405e;
-    padding: 0.75em;
+    padding: 0.4em;
+    padding-top: 0.75em;
+    padding-bottom: 0.75em;
     list-style-type: none;
     transition: 4sec;
-    border-top: solid 0.5em;
-    border-color: #34405e;
-    
-
-
-
+    /* border-top: solid 0.5em;
+    border-color: #34405e; */
+    font-size: 1.2em;
 }
 
 li a {
     text-decoration: none;
-
     font-family: "Pembroke", sans-serif;
     color: white;
-
 
 }
 
 li:hover {
     background-color: #525b75;
+    /*
     border-top: solid 0.5em;
-    border-color: #f8db2d;
-
+    border-color: #f8db2d; */
 }
+
+
 
 @media(min-width: 37.5em) and (max-width: 45.5em) {
     main {
         grid-template-columns: 50% 50%;
-
+        margin-left: 4.12em;
+        margin-right: 4.12em;
     }
 
     article:first-child {
         grid-column-start: 1;
         grid-column-end: 3;
+    }
 
+    li {
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    h1 {
+        text-align: left;
+        margin-left: 0.6em;
+        margin-right: 0;
+    }
+
+    li:nth-of-type(4) {
+        margin-left: auto;
+
+    }
+
+    ul {
+        margin: 1em;
+        margin-bottom: 0;
+        max-width: 100%;
+    }
+
+
+
+    header p {
+        margin-left: 1.3em;
     }
 }
 
@@ -194,43 +214,265 @@ li:hover {
 @media(min-width: 45.5em) {
     main {
         grid-template-columns: 33% 33% 33%;
+        margin-left: 11.25em;
+        margin-right: 11.25em;
+    }
 
+    li {
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
 
     article:first-child {
         grid-column-start: 1;
         grid-column-end: 3;
+    }
 
+    li:nth-of-type(4) {
+        margin-left: auto;
+
+    }
+
+    h1 {
+        text-align: left;
+        margin-left: 0.6em;
+        margin-right: 0;
+    }
+
+    ul {
+        margin: 1em;
+        margin-bottom: 0;
+        max-width: 100%;
+    }
+
+    header p {
+        margin-left: 1.3em;
     }
 }
 
 
-.filter {
-    display: flex;
-    flex-flow: row wrap;
-}
+
 
 footer p {
     width: 100%;
 }
 
-header p {
-    color: #f8db2d;
-    margin: auto;
-    width: 14em;
-   margin-top: -3em;
-    font-family: 'Aspect-Light'
-}
+
 
 fieldset {
-   padding: 1em;
+    padding: 1em;
     font-family: 'Pembroke', sans-serif;
-    
+    border: none;
+    display: flex;
+    flex-direction: column;
 }
 
 legend {
-    padding-bottom: 2em;
-   
-  
+    font-family: "Aspect";
+    font-weight: bold;
+
 }
 
+form button {
+    margin: 0;
+
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rating {
+    width: 2em;
+    height: 2em;
+    margin: 2em;
+
+}
+
+.rating:nth-child(3) {
+    transform: rotate(180deg);
+}
+
+/*div {
+    display: flex;
+    align-items: stretch;
+    margin: 1em;
+    display: none;
+
+
+}
+
+div p {
+    margin: 0;
+    padding: 0.5em;
+    font-family: "Pembroke", sans-serif;
+    color: white;
+
+}
+
+div p:nth-child(1) {
+    background-color: green;
+
+}
+
+div p:nth-child(2) {
+    background-color: red;
+
+    flex-shrink: 1;
+
+}
+*/
+label {
+    margin: 1em;
+
+    font-family: "Pembroke", sans-serif;
+    font-weight: bold;
+
+}
+
+
+section p:nth-child(n+3) {
+    position: absolute;
+}
+
+section p:nth-child(0) {
+    left: 4em;
+}
+
+section p:nth-child(1) {
+    left: 7em;
+    bottom: 4em;
+}
+
+section p:nth-child(2) {
+    left: 2em;
+    top: 40em;
+}
+
+section p:nth-child(3) {
+    left: 15em;
+    top: 57em;
+}
+
+section p:nth-child(4) {
+    left: 10em;
+    top: 70em;
+}
+
+section p:nth-child(5) {
+    left: 1em;
+    top: 85em
+}
+
+section p:nth-child(6) {
+    left: 19em;
+    top: 95em
+}
+
+section p:nth-child(7) {
+    left: 10em;
+    top: 120em
+}
+
+
+
+section article {
+    position: relative;
+    top: 120em;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 20em;
+    border-style: solid;
+    padding: 1em;
+    border-width: 0.09em;
+    margin: auto;
+    border-color: gainsboro;
+    border-radius: 0.25em;
+    margin-top: 0.875em;
+
+}
+
+form input {
+
+    padding-left: 1.25em;
+    padding-right: 1.25em;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    border-radius: 0.2em;
+    border-color: #2eb6c8;
+    border-width: 0.04em;
+    background-color: #c1d4da;
+    font-family: 'Pembroke', sans-serif;
+    font-size: 1em;
+
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+footer {
+    position: relative;
+    top: 160em;
+}
+
+article footer {
+    position: inherit;
+
+}
+
+section {
+    margin: auto;
+}
+
+/* deze styling zorgt ervoor dat de indicator altijd fixed bovenaan de pagina staat */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: #faec48;
+}
+
+/* De container krijgt een donkerblauwe achterrond */
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #34405e;
+}
+
+/* Hier krijgt de progress bar een gele kleur*/
+.progress-bar {
+    height: 8px;
+    background: #faec48;
+    width: 0%;
+}
+
+header button {
+    background-color: transparent;
+    position: absolute;
+    top: 1em;
+    right: 0;
+    margin: 0;
+}
+
+object img {
+    width: 1.5em;
+}
+
+form button:first-of-type{
+ background-color: transparent;
+    width: 0.75em;
+     position: absolute;
+   
+    right: 3.5em;
+    margin: 0;
+}
+
+form fieldset:first-of-type {
+    margin-top: 1em;
+}
