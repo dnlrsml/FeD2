@@ -62,12 +62,12 @@
        <section>
             <article class="ratings">
                 <h2>Wat vond u van het verhaal?</h2>
-                <button> <img class="rating" src="/img/neutral.png" alt="Like"></button>
-                <button> <img class="rating" src="/img/neutral.png" alt="Dislike"></button>
-          
-                    <p>80%</p>
-                    <p>20%</p>
-             
+                <button class="thumbs" value="Hide/Show" onClick="showHideDiv('divMsg')"> <img class="rating" src="/img/neutral.png" alt="Like"></button>
+                <button class="thumbs"> <img class="rating" src="/img/neutral.png" alt="Dislike"></button>
+            <div id="divMsg">
+                   <img class="balk" src="/img/rating%20verhaal.png" alt="rating">
+                   <button class="fav">Dit verhaal toevoegen aan favorieten?</button>
+                </div>
             </article>
         </section>
         </main>

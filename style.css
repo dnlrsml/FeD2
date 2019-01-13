@@ -5,9 +5,13 @@ html {
   
 }
 
+
+
 .ratings {
     max-width: 25em;
     min-width: 20em;
+    min-height: 23em;
+  
 }
 
 main {
@@ -43,8 +47,9 @@ article img {
     height: 10em;
 }
 
-main button:nth-child(-n+2) {
+/* main button:nth-child(-n+2) {
     width: 9em;
+*/
 
 }
 article h2 {
@@ -294,6 +299,8 @@ li:hover {
         padding-top: 1em;
         padding-bottom: 1em;
     }
+    
+
 
     article:first-child {
         grid-column-start: 1;
@@ -329,7 +336,13 @@ li:hover {
     .verhaal{
      content:url("/img/interatie%20animatie.gif");
         width: 100%;
-} 
+        
+    } 
+
+
+    }
+
+
     
     .filter {
     width: 90%;
@@ -380,7 +393,7 @@ nav {
 .rating {
     width: 2em;
     height: 2em;
-    margin: 2em;
+    
 
    
 }
@@ -580,6 +593,7 @@ object img {
 
 form {position: relative;}
 
+
 form button:first-of-type{
  background-color: transparent;
     width: 0.75em;
@@ -608,3 +622,25 @@ h4 {
     object-fit: contain;
     padding: 1em;
 }
+
+body section button {
+display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.thumbs {
+    width: 1em;
+   display: inline;
+    position: relative;
+    margin-left: 3em;
+    background: transparent; 
+}
+
+
+
+.balk {
+    object-fit: contain;
+}
+

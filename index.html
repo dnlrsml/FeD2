@@ -4,9 +4,9 @@
 <head>
     <title>99 Verhalen</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="/aspw-hv.ttf">
-    <link rel="stylesheet" href="/Relay-Regular.ttf">
-    <link rel="stylesheet" href="/Relay-Bold.ttf">
+    <link rel="stylesheet" href="aspw-hv.ttf">
+    <link rel="stylesheet" href="Relay-Regular.ttf">
+    <link rel="stylesheet" href="Relay-Bold.ttf">
     <link rel="stylesheet" href="../Pembroke-Regular.ttf">
     <link rel="stylesheet" href="../Pembroke-Medium.ttf">
 
@@ -27,22 +27,22 @@
 
             <ul>
                 <li>
-                    <a href="index.html">Home</a>
+                    <a href="/index.html">Home</a>
                 </li>
                 <li>
-                    <a href="favorieten.html">Favorieten</a>
+                    <a href="/favorieten.html">Favorieten</a>
                 </li>
                 <li>
-                    <a href="over.html">Over</a>
+                    <a href="/over.html">Over</a>
                 </li>
                 <li>
-                    <a href="login.html">Inloggen</a>
+                    <a href="/login.html">Inloggen</a>
                 </li>
             </ul>
         </nav>
         <button>
             <object data="your.svg" type="image/svg+xml">
-                <img src="img/magnifying-glass.svg" />
+                <img src="/img/magnifying-glass.svg" />
             </object>
         </button>
     </header>
@@ -50,14 +50,15 @@
 
 
     <section>
-        <button type="button" id="hideshow">FILTEREN</button>
+        <button type="button" value="Show/Hide" onClick="showHideDiv('divMsg')">FILTEREN</button>
         <button type="button">SORTEREN</button>
     </section>
-    
+
+    <div id="divMsg">
         <form class="filter">
-            <button>
+            <button type="button" value="Show/Hide" onClick="showHideDiv('divMsg')">
                 <object data="your.svg" type="image/svg+xml">
-                    <img src="img/cancel.svg" />
+                    <img src="/img/cancel.svg" />
                 </object>
             </button>
             <fieldset>
@@ -89,7 +90,8 @@
             </fieldset>
             <button>Toon X Verhalen</button>
         </form>
-    
+    </div>
+
     <main>
 
 
@@ -107,7 +109,7 @@
                 <p class="stars">99%</p>
             </footer>
         </article>
-<h4>    </h4>
+        <h4> </h4>
 
 
 
@@ -145,6 +147,18 @@
                 <p class="stars">80%</p>
             </footer>
         </article>
+
+        <article>
+            <img src="img/Nichterig_Desktop_Luuk_Arts.png" alt="">
+            <h3><a href="">Nichterig</a></h3>
+            <p>Verhaal 26</p>
+            <p>Leesduur: Lang</p>
+            <p>Schrijfstijl: Verhaal</p>
+            <footer>
+                <p class="stars">70%</p>
+            </footer>
+        </article>
+
 
 
 
