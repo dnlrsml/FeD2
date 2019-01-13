@@ -49,12 +49,50 @@
     <h2>99 VERHALEN VOOR ONDERWEG</h2>
 
 
+    <section>
+        <button type="button" id="hideshow">FILTEREN</button>
+        <button type="button">SORTEREN</button>
+    </section>
+    
+        <form class="filter">
+            <button>
+                <object data="your.svg" type="image/svg+xml">
+                    <img src="/img/cancel.svg" />
+                </object>
+            </button>
+            <fieldset>
+                <legend>Leesduur</legend>
+                <label> <input type="checkbox" name="leesduur" value="> 1 min" checked>> 1 minuut</label>
+                <label> <input type="checkbox" name="leesduur" value="2 min">2 minuten</label>
+                <label> <input type="checkbox" name="leesduur" value="> 3 min">> 3 minuten</label>
+            </fieldset>
 
+            <fieldset>
+                <legend>Kleur</legend>
+                <label><input type="checkbox" name="kleur" value="> 1 min" checked>Kleurrijk</label>
+                <label> <input type="checkbox" name="kleur" value="2 min">Grauw</label>
+                <label> <input type="checkbox" name="kleur" value="> 3 min">Zwart-Wit</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Sfeer</legend>
+                <label> <input type="checkbox" name="sfeer" value="> 1 min" checked>Chaotisch</label>
+                <label> <input type="checkbox" name="sfeer" value="2 min">Geordend</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Schrijfstijl</legend>
+                <label><input type="checkbox" name="schrijfstijl" value="> 1 min" checked>Dichtvorm</label>
+                <label> <input type="checkbox" name="leesduur" value="2 min">Songtekst</label>
+                <label> <input type="checkbox" name="leesduur" value="> 3 min">Verhaal</label>
+                <label> <input type="checkbox" name="leesduur" value="> 3 min">Dialoog</label>
+            </fieldset>
+            <button>Toon X Verhalen</button>
+        </form>
+    
     <main>
-        <section>
-            <button type="button">FILTEREN</button>
-            <button type="button">SORTEREN</button>
-        </section>
+
+
 
 
 
@@ -69,7 +107,7 @@
                 <p class="stars">99%</p>
             </footer>
         </article>
-
+<h4>    </h4>
 
 
 
@@ -121,41 +159,14 @@
     </footer>
 
 
-    <form>
-        <button>
-            <object data="your.svg" type="image/svg+xml">
-                <img src="/img/cancel.svg" />
-            </object>
-        </button>
-        <fieldset>
-            <legend>Leesduur</legend>
-            <label> <input type="checkbox" name="leesduur" value="> 1 min" checked>> 1 minuut</label>
-            <label> <input type="checkbox" name="leesduur" value="2 min">2 minuten</label>
-            <label> <input type="checkbox" name="leesduur" value="> 3 min">> 3 minuten</label>
-        </fieldset>
 
-        <fieldset>
-            <legend>Kleur</legend>
-            <label><input type="checkbox" name="kleur" value="> 1 min" checked>Kleurrijk</label>
-            <label> <input type="checkbox" name="kleur" value="2 min">Grauw</label>
-            <label> <input type="checkbox" name="kleur" value="> 3 min">Zwart-Wit</label>
-        </fieldset>
 
-        <fieldset>
-            <legend>Sfeer</legend>
-            <label> <input type="checkbox" name="sfeer" value="> 1 min" checked>Chaotisch</label>
-            <label> <input type="checkbox" name="sfeer" value="2 min">Geordend</label>
-        </fieldset>
 
-        <fieldset>
-            <legend>Schrijfstijl</legend>
-            <label><input type="checkbox" name="schrijfstijl" value="> 1 min" checked>Dichtvorm</label>
-            <label> <input type="checkbox" name="leesduur" value="2 min">Songtekst</label>
-            <label> <input type="checkbox" name="leesduur" value="> 3 min">Verhaal</label>
-            <label> <input type="checkbox" name="leesduur" value="> 3 min">Dialoog</label>
-        </fieldset>
-        <button>Toon X Verhalen</button>
-    </form>
+
+
+
+
+
 </body>
 
 

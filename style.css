@@ -2,6 +2,12 @@ body,
 html {
     margin: 0;
     padding: 0;
+  
+}
+
+.ratings {
+    max-width: 25em;
+    min-width: 20em;
 }
 
 main {
@@ -18,8 +24,8 @@ a {
 }
 
 article {
-    border: 1px;
-    padding: 0, 625em;
+    border: 0.0625em;
+    padding: 0.625em;
     border-color: gainsboro;
     ;
     border-style: solid;
@@ -27,8 +33,8 @@ article {
     margin-bottom: 1em;
     margin: 1em;
 
-    border-radius: 5px;
-    box-shadow: 0px 1px 5px gainsboro;
+    border-radius: 0.3125em;
+    box-shadow: 0em 0.0625em 0.3125em gainsboro;
     transition: 0.7sec;
     min-width: 14em;
 }
@@ -40,6 +46,18 @@ article img {
 main button:nth-child(-n+2) {
     width: 9em;
 
+}
+article h2 {
+    background: none;
+    color: dimgrey;
+    padding: 0.6em;
+    
+}
+
+article button {
+    margin: auto;
+width: 100%;
+    align-content: center;
 }
 
 img {
@@ -104,6 +122,8 @@ button {
     color: white;
     font-size: 1em;
     border: none;
+
+    
 }
 
 
@@ -160,6 +180,15 @@ li a {
 
 }
 
+.verhaal{
+    content:url("/img/viewportsArtboard%203.jpg");
+      width: 100%;
+} 
+
+button a {
+     text-decoration: none;
+    color: white;
+}
 li:hover {
     background-color: #525b75;
     /*
@@ -167,9 +196,27 @@ li:hover {
     border-color: #f8db2d; */
 }
 
+@media(max-width: 37.5em) {
+    .verhaal{
+    width: 100%;
+    background-image: url("/img/Alzheimer%20Poster%20V2.jpg");
+} 
+    .filter {
+   
+    display: block; 
+}
+    form fieldset:first-of-type {
+    margin-top: 1.5em;
+}
+    
+    .verhaal{
+    content:url("/img/viewportsArtboard%205.jpg");
+          width: 100%;
+} 
+    
+}
 
-
-@media(min-width: 37.5em) and (max-width: 45.5em) {
+@media(min-width: 37.5em) and (max-width: 50em) {
     main {
         grid-template-columns: 50% 50%;
         margin-left: 4.12em;
@@ -202,16 +249,41 @@ li:hover {
         margin-bottom: 0;
         max-width: 100%;
     }
+ form fieldset:nth-child(3) {
+    margin-left: 1.5em;
+}
+ 
 
-
-
-    header p {
-        margin-left: 1.3em;
+  
+    
+    h4:first-of-type { 
+        display: none;
+        color: transparent;
+        font-size: 0;
     }
+    
+ 
+    .verhaal{
+    content:url("/img/viewportsArtboard%204.jpg");
+          width: 100%;
+} 
+   
+  
+    
+    
+        .filter {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+    
+ 
 }
 
 
-@media(min-width: 45.5em) {
+
+@media(min-width: 50em) {
     main {
         grid-template-columns: 33% 33% 33%;
         margin-left: 11.25em;
@@ -248,6 +320,25 @@ li:hover {
     header p {
         margin-left: 1.3em;
     }
+    
+    h4:first-of-type { 
+        display: none;
+        color: transparent;
+        font-size: 0;
+    }
+    .verhaal{
+     content:url("/img/interatie%20animatie.gif");
+        width: 100%;
+} 
+    
+    .filter {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+       
+    
+}
+
 }
 
 
@@ -275,12 +366,14 @@ legend {
 
 form button {
     margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
 
 }
 
 
 nav {
-    display: flex;
+   
     justify-content: space-between;
 }
 
@@ -289,6 +382,7 @@ nav {
     height: 2em;
     margin: 2em;
 
+   
 }
 
 .rating:nth-child(3) {
@@ -332,8 +426,29 @@ label {
 
 }
 
+section:first-of-type{
+      
+    margin: auto;
+    width: 100%;
+    display: grid;
+    align-self: center;
+   
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 1em;
+   
+    
+}
 
-section p:nth-child(n+3) {
+section button {
+    grid-column-start: 3;
+}
+
+section button:nth-child(2){
+    grid-column-start: 4; 
+}
+
+
+/* section p:nth-child(n+3) {
     position: absolute;
 }
 
@@ -383,7 +498,7 @@ section article {
     top: 120em;
 
 }
-
+*/
 form {
     display: flex;
     flex-direction: column;
@@ -415,10 +530,7 @@ form input {
     margin-top: 1em;
 }
 
-footer {
-    position: relative;
-    top: 160em;
-}
+
 
 article footer {
     position: inherit;
@@ -426,6 +538,7 @@ article footer {
 }
 
 section {
+    
     margin: auto;
 }
 
@@ -441,13 +554,13 @@ section {
 /* De container krijgt een donkerblauwe achterrond */
 .progress-container {
     width: 100%;
-    height: 8px;
+    height: 0.5em;
     background: #34405e;
 }
 
 /* Hier krijgt de progress bar een gele kleur*/
 .progress-bar {
-    height: 8px;
+    height: 0.5em;
     background: #faec48;
     width: 0%;
 }
@@ -462,7 +575,10 @@ header button {
 
 object img {
     width: 1.5em;
+    position: absolute;
 }
+
+form {position: relative;}
 
 form button:first-of-type{
  background-color: transparent;
@@ -473,6 +589,22 @@ form button:first-of-type{
     margin: 0;
 }
 
-form fieldset:first-of-type {
-    margin-top: 1em;
+main h2 {
+    padding: 0;
+    background: none;
+    color: #09173b;
+}
+
+h4 {
+    border-bottom: solid 0.5em;
+    color: #c1d4da;
+    width: 5em;
+    margin: auto;
+    margin-bottom: 2em;
+    
+}
+
+.svg {
+    object-fit: contain;
+    padding: 1em;
 }
