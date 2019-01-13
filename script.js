@@ -4,7 +4,7 @@
 
 /*eslint 'no-console': 0*/
 
-// When the user scrolls the page, execute myFunction 
+// Wanneer je scrollt wordt de functie uitgevoerd. 
 window.onscroll = function() {myFunction();};
 
 function myFunction() {
@@ -26,3 +26,13 @@ function showHideDiv(ele) {
 					return false;
 				}
 			}
+
+function toggle (t) {
+if (t.childNodes[0].innerHTML == "Toevoegen aan Favorieten?") {
+    t.childNodes[0].innerHTML = "Toegevoegd aan Favorieten";
+} else {
+    t.childNodes[0].innerHTML = "Toevoegen aan Favorieten?";
+}
+}
+
+

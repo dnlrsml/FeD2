@@ -4,11 +4,11 @@
 <head>
     <title>99 Verhalen</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" href="/aspw-hv.ttf">
-    <link rel="stylesheet" href="Relay-Regular.ttf">
-    <link rel="stylesheet" href="Relay-Bold.ttf">
-    <link rel="stylesheet" href="../Pembroke-Regular.ttf">
-    <link rel="stylesheet" href="../Pembroke-Medium.ttf">
+    <link rel="stylesheet" href="/fonts/aspw-hv.ttf">
+    <link rel="stylesheet" href="/fonts/Relay-Regular.ttf">
+    <link rel="stylesheet" href="/fonts/Relay-Bold.ttf">
+    <link rel="stylesheet" href="/fonts/Pembroke-Regular.ttf">
+    <link rel="stylesheet" href="/fonts/Pembroke-Medium.ttf">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -40,11 +40,14 @@
                 </li>
             </ul>
         </nav>
+
         <button>
+
             <object data="your.svg" type="image/svg+xml">
                 <img src="img/magnifying-glass.svg" />
             </object>
         </button>
+
     </header>
     <h2>99 VERHALEN VOOR ONDERWEG</h2>
 
@@ -63,34 +66,49 @@
             </button>
             <fieldset>
                 <legend>Leesduur</legend>
-                <label> <input type="checkbox" name="leesduur" value="> 1 min" checked>> 1 minuut</label>
-                <label> <input type="checkbox" name="leesduur" value="2 min">2 minuten</label>
-                <label> <input type="checkbox" name="leesduur" value="> 3 min">> 3 minuten</label>
+                <label> <input type="checkbox" name="leesduur" value="> 1 min" checked>> 1 minuut (15)</label>
+                <label> <input type="checkbox" name="leesduur" value="2 min">2 minuten (30)</label>
+                <label> <input type="checkbox" name="leesduur" value="> 3 min">> 3 minuten (54)</label>
             </fieldset>
 
             <fieldset>
                 <legend>Kleur</legend>
-                <label><input type="checkbox" name="kleur" value="> 1 min" checked>Kleurrijk</label>
-                <label> <input type="checkbox" name="kleur" value="2 min">Grauw</label>
-                <label> <input type="checkbox" name="kleur" value="> 3 min">Zwart-Wit</label>
+                <label><input type="checkbox" name="kleur" value="> 1 min" checked>Kleurrijk (57)</label>
+                <label> <input type="checkbox" name="kleur" value="2 min">Grauw (30)</label>
+                <label> <input type="checkbox" name="kleur" value="> 3 min">Zwart-Wit (12)</label>
             </fieldset>
 
             <fieldset>
                 <legend>Sfeer</legend>
-                <label> <input type="checkbox" name="sfeer" value="> 1 min" checked>Chaotisch</label>
-                <label> <input type="checkbox" name="sfeer" value="2 min">Geordend</label>
+                <label> <input type="checkbox" name="sfeer" value="> 1 min" checked>Chaotisch (24)</label>
+                <label> <input type="checkbox" name="sfeer" value="2 min">Geordend (75)</label>
             </fieldset>
 
             <fieldset>
                 <legend>Schrijfstijl</legend>
-                <label><input type="checkbox" name="schrijfstijl" value="> 1 min" checked>Dichtvorm</label>
-                <label> <input type="checkbox" name="leesduur" value="2 min">Songtekst</label>
-                <label> <input type="checkbox" name="leesduur" value="> 3 min">Verhaal</label>
-                <label> <input type="checkbox" name="leesduur" value="> 3 min">Dialoog</label>
+                <label><input type="checkbox" name="schrijfstijl" value="> 1 min" checked>Dichtvorm (12)</label>
+                <label> <input type="checkbox" name="leesduur" value="2 min">Songtekst (2)</label>
+                <label> <input type="checkbox" name="leesduur" value="> 3 min">Verhaal (81)</label>
+                <label> <input type="checkbox" name="leesduur" value="> 3 min">Dialoog (4)</label>
             </fieldset>
             <button>Toon X Verhalen</button>
         </form>
     </div>
+
+    <form>
+        <select name="sorteer">
+            <option value="">Kort Verhaal Eerst</option>
+            <option value="">Lang Verhaal Eerst</option>
+            <option value="">Oudste Eerst</option>
+            <option value="">Best Beoordeeld</option>
+            <option value="">Slechtst Beordeeld</option>
+        </select>
+
+
+    </form>
+
+
+
 
     <main>
 
@@ -106,7 +124,7 @@
             <p>Leesduur: Gemiddeld</p>
             <p>Schrijfstijl: Verhaal</p>
             <footer>
-                <p class="stars">99%</p>
+                <p class="stars">99% <img src="/img/thumbsup.png" alt=""></p>
             </footer>
         </article>
         <h4> </h4>
@@ -122,7 +140,7 @@
             <p>Leesduur: Lang</p>
             <p>Schrijfstijl: Dialoog</p>
             <footer>
-                <p class="stars">69%</p>
+                <p class="stars">69% <img src="/img/thumbsup.png" alt=""></p>
             </footer>
         </article>
 
@@ -133,7 +151,7 @@
             <p>Leesduur: Kort</p>
             <p>Schrijfstijl: Verhaal</p>
             <footer>
-                <p class="stars">75%</p>
+                <p class="stars">75% <img src="/img/thumbsup.png" alt=""></p>
             </footer>
         </article>
 
@@ -144,7 +162,7 @@
             <p>Leesduur: Gemiddeld</p>
             <p>Schrijfstijl: Verhaal</p>
             <footer>
-                <p class="stars">80%</p>
+                <p class="stars">80% <img src="/img/thumbsup.png" alt=""></p>
             </footer>
         </article>
 
@@ -155,7 +173,7 @@
             <p>Leesduur: Lang</p>
             <p>Schrijfstijl: Verhaal</p>
             <footer>
-                <p class="stars">70%</p>
+                <p class="stars">70% <img src="/img/thumbsup.png" alt=""></p>
             </footer>
         </article>
 
@@ -167,7 +185,15 @@
         <button>LAAD MEER VERHALEN</button>
     </section>
 
-    <footer>
+
+    <footer class="end">
+        <h5>Blijf In Contact</h5>
+        <ul class="contact">
+            <li><a href="">Facebook</a></li>
+            <li><a href="">Twitter</a></li>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">YouTube</a></li>
+        </ul>
         <p>Foto's: ©Eurostar; ©Eurostar; ©Eurostar; ©Eurostar; ©Getty; ©Shutterstock; ©Shutterstock; ©Shutterstock;</p>
         <p> © 2018 Eurostar International Ltd. Alle rechten voorbehouden</p>
     </footer>

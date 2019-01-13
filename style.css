@@ -2,7 +2,7 @@ body,
 html {
     margin: 0;
     padding: 0;
-  
+
 }
 
 
@@ -11,7 +11,7 @@ html {
     max-width: 25em;
     min-width: 20em;
     min-height: 23em;
-  
+
 }
 
 main {
@@ -45,6 +45,7 @@ article {
 
 article img {
     height: 10em;
+    
 }
 
 /* main button:nth-child(-n+2) {
@@ -52,16 +53,19 @@ article img {
 */
 
 }
+
 article h2 {
     background: none;
     color: dimgrey;
     padding: 0.6em;
-    
+
 }
+
+
 
 article button {
     margin: auto;
-width: 100%;
+    width: 100%;
     align-content: center;
 }
 
@@ -116,6 +120,15 @@ h3 {
     font-weight: bolder;
 }
 
+h5 {
+    font-family: 'Pembroke', sans-serif;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #34405e;
+    margin: 0;
+    margin-left: 0.5em;
+}
+
 button {
     background-color: #2eb6c8;
     padding-left: 1.875em;
@@ -128,7 +141,7 @@ button {
     font-size: 1em;
     border: none;
 
-    
+
 }
 
 
@@ -153,6 +166,7 @@ article:hover {}
 
 footer {
     font-size: 0.75em;
+
 }
 
 ul {
@@ -185,15 +199,16 @@ li a {
 
 }
 
-.verhaal{
-    content:url("/img/viewportsArtboard%203.jpg");
-      width: 100%;
-} 
+.verhaal {
+    content: url("/img/viewportsArtboard%203.jpg");
+    width: 100%;
+}
 
 button a {
-     text-decoration: none;
+    text-decoration: none;
     color: white;
 }
+
 li:hover {
     background-color: #525b75;
     /*
@@ -202,23 +217,26 @@ li:hover {
 }
 
 @media(max-width: 37.5em) {
-    .verhaal{
-    width: 100%;
-    background-image: url("/img/Alzheimer%20Poster%20V2.jpg");
-} 
+    .verhaal {
+        width: 100%;
+        background-image: url("/img/Alzheimer%20Poster%20V2.jpg");
+    }
+
     .filter {
-   
-    display: block; 
-}
+        grid-template-columns: 99%;
+
+        display: block;
+    }
+
     form fieldset:first-of-type {
-    margin-top: 1.5em;
-}
-    
-    .verhaal{
-    content:url("/img/viewportsArtboard%205.jpg");
-          width: 100%;
-} 
-    
+        margin-top: 1.5em;
+    }
+
+    .verhaal {
+        content: url("/img/viewportsArtboard%205.jpg");
+        width: 100%;
+    }
+
 }
 
 @media(min-width: 37.5em) and (max-width: 50em) {
@@ -226,6 +244,10 @@ li:hover {
         grid-template-columns: 50% 50%;
         margin-left: 4.12em;
         margin-right: 4.12em;
+    }
+
+    header p {
+        margin-left: 1.3em;
     }
 
     article:first-child {
@@ -254,36 +276,37 @@ li:hover {
         margin-bottom: 0;
         max-width: 100%;
     }
- form fieldset:nth-child(3) {
-    margin-left: 1.5em;
-}
- 
 
-  
-    
-    h4:first-of-type { 
+    form fieldset:nth-child(3) {
+        margin-left: 1.5em;
+    }
+
+
+
+
+    h4:first-of-type {
         display: none;
         color: transparent;
         font-size: 0;
     }
-    
- 
-    .verhaal{
-    content:url("/img/viewportsArtboard%204.jpg");
-          width: 100%;
-} 
-   
-  
-    
-    
-        .filter {
-    width: 90%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-    
-}
-    
- 
+
+
+    .verhaal {
+        content: url("/img/viewportsArtboard%204.jpg");
+        width: 100%;
+    }
+
+
+
+
+    .filter {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+
+    }
+
+
 }
 
 
@@ -299,7 +322,7 @@ li:hover {
         padding-top: 1em;
         padding-bottom: 1em;
     }
-    
+
 
 
     article:first-child {
@@ -327,32 +350,32 @@ li:hover {
     header p {
         margin-left: 1.3em;
     }
-    
-    h4:first-of-type { 
+
+    h4:first-of-type {
         display: none;
         color: transparent;
         font-size: 0;
     }
-    .verhaal{
-     content:url("/img/interatie%20animatie.gif");
-        width: 100%;
-        
-    } 
 
+    .verhaal {
+        content: url("/img/interatie%20animatie.gif");
+        width: 100%;
 
     }
 
-
-    
     .filter {
-    width: 90%;
-    display: grid;
-    grid-template-columns: 50% 50%;
-       
-    
-}
+        width: 90%;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
 
 }
+
+
+
+
+
+
 
 
 
@@ -386,16 +409,16 @@ form button {
 
 
 nav {
-   
+
     justify-content: space-between;
 }
 
 .rating {
     width: 2em;
     height: 2em;
-    
 
-   
+
+
 }
 
 .rating:nth-child(3) {
@@ -439,25 +462,25 @@ label {
 
 }
 
-section:first-of-type{
-      
+section:first-of-type {
+
     margin: auto;
     width: 100%;
     display: grid;
     align-self: center;
-   
+
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 1em;
-   
-    
+
+
 }
 
 section button {
     grid-column-start: 3;
 }
 
-section button:nth-child(2){
-    grid-column-start: 4; 
+section button:nth-child(2) {
+    grid-column-start: 4;
 }
 
 
@@ -550,10 +573,7 @@ article footer {
 
 }
 
-section {
-    
-    margin: auto;
-}
+
 
 /* deze styling zorgt ervoor dat de indicator altijd fixed bovenaan de pagina staat */
 .header {
@@ -591,14 +611,16 @@ object img {
     position: absolute;
 }
 
-form {position: relative;}
+form {
+    position: relative;
+}
 
 
-form button:first-of-type{
- background-color: transparent;
+form button:first-of-type {
+    background-color: transparent;
     width: 0.75em;
-     position: absolute;
-   
+    position: absolute;
+
     right: 3.5em;
     margin: 0;
 }
@@ -615,7 +637,7 @@ h4 {
     width: 5em;
     margin: auto;
     margin-bottom: 2em;
-    
+
 }
 
 .svg {
@@ -624,23 +646,95 @@ h4 {
 }
 
 body section button {
-display: block;
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
 
 .thumbs {
     width: 1em;
-   display: inline;
+    display: inline;
     position: relative;
     margin-left: 3em;
-    background: transparent; 
+    background: transparent;
 }
-
-
 
 .balk {
     object-fit: contain;
 }
 
+.login {
+    width: 15em;
+    margin: auto;
+}
+
+.help {
+    font-family: 'Pembroke', sans-serif;
+    margin: 0.5em;
+}
+
+.empty {
+    margin-bottom: 3em;
+
+    background-image: url("");
+    background-color: #c1d4da;
+    color: #09173b;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.contact li {
+    background: none;
+    margin: 0;
+
+}
+
+.contact li a {
+    color: #2eb6c8;
+}
+
+.contact li:nth-of-type(4) {
+    margin-left: 0;
+}
+
+.end {
+    margin-bottom: 0;
+    margin-top: 5em;
+}
+
+.expand input[type=search] {
+	width: 15px;
+	padding-left: 10px;
+	color: transparent;
+    cursor: pointer;
+   
+}
+    
+.expand input[type=search]:focus {
+	width: 130px;
+	padding-left: 32px;
+	color: #000;
+	background-color: #fff;
+	cursor: auto;
+}
+   
+.emptyst { padding: 1em;
+    margin: 4em;
+   font-weight: 700;
+    color: grey;
+    position: relative;
+    margin-bottom: 5em;
+    
+}
+  
+p img {
+    width: 1.5em;
+    height: 1.5em;
+  
+    object-fit: contain
+}
