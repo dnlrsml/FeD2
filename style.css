@@ -236,6 +236,10 @@ li:hover {
         content: url("/img/viewportsArtboard%205.jpg");
         width: 100%;
     }
+    
+    .zoeken {
+    display: none;
+}
 
 }
 
@@ -245,6 +249,9 @@ li:hover {
         margin-left: 4.12em;
         margin-right: 4.12em;
     }
+    .zoeken {
+    display: none;
+}
 
     header p {
         margin-left: 1.3em;
@@ -317,13 +324,22 @@ li:hover {
         margin-left: 11.25em;
         margin-right: 11.25em;
     }
+    
+    .mag {
+        display: none;
+    }
 
     li {
         padding-top: 1em;
         padding-bottom: 1em;
     }
 
-
+.zoeken {
+    float: right;
+    position: absolute;
+    right: -0.5em;
+    top: -1em;
+}
 
     article:first-child {
         grid-column-start: 1;
@@ -738,3 +754,4 @@ p img {
   
     object-fit: contain
 }
+
