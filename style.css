@@ -339,6 +339,7 @@ li:hover {
     position: absolute;
     right: -0.5em;
     top: -1em;
+    border: none;
 }
 
     article:first-child {
