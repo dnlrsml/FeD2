@@ -14,15 +14,18 @@
 </head>
 
 <body>
-    <script src="script.js"></script>
+  
     <header>
-
+    <section>
+ <form action="/index.html" class="show-search">
+      <input type="text" placeholder="Zoeken.." name="search">
+      <button type="submit"></button>
+        </form>
+        </section>
 
         <h1>EUROSTAR</h1>
         <p>Ervaringen voor onderweg</p>
-        <!--<form>
-            <input type="text" placeholder="Zoeken..">
-        </form>-->
+      
         <nav>
 
             <ul>
@@ -40,13 +43,14 @@
                 </li>
             </ul>
         </nav>
-
         <button>
 
             <object data="your.svg" type="image/svg+xml">
                 <img src="img/magnifying-glass.svg" />
             </object>
         </button>
+
+    
 
     </header>
 <main>
@@ -57,15 +61,19 @@
 
         
        <form class="login">
+       <label for="">Naam</label>
        <input type="text" placeholder="Naam" name="username" required>  
-       <input type="text" placeholder="voorbeeld@email.com" name="username" required> 
+       <label for="">E-mail</label>
+       <input type="email" placeholder="voorbeeld@email.com" name="email" required pattern="[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*"> 
+       <label for="">Gebruikersnaam</label>
         <input type="text" placeholder="Gebruikersnaam" name="username" required>  
+        <label for="">Wachtwoord</label>
         <input type="password" placeholder="Wachtwoord" name="wword" required> 
            
            <a href="login.html" class="help">Al een account?</a>
-          
+          <input type="submit"> 
        </form>
-       <button>Log In</button>
+      
     </article>
  
    
@@ -84,5 +92,5 @@
 
 
 </body>
-
+<script src="script.js"></script>
 </html>

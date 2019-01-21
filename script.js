@@ -14,25 +14,37 @@ function myFunction() {
   document.getElementById("myBar").style.width = scrolled + "%";
 }
 
-function showHideDiv(ele) {
-				var srcElement = document.getElementById(ele);
-				if (srcElement != null) {
-					if (srcElement.style.display == "block") {
-						srcElement.style.display = 'none';
-					}
-					else {
-						srcElement.style.display = 'block';
-					}
-					return false;
-				}
-			}
 
-function toggle (t) {
-if (t.childNodes[0].innerHTML == "Toevoegen aan Favorieten?") {
-    t.childNodes[0].innerHTML = "Toegevoegd aan Favorieten";
-} else {
-    t.childNodes[0].innerHTML = "Toevoegen aan Favorieten?";
-}
-}
+var filterbutton = document.querySelector('section >  button:nth-of-type(1)');
+
+var filtersection = document.querySelector('div > form');
+
+
+filterbutton.addEventListener('click', function(){
+   
+    filtersection.classList.toggle('show');
+    
+});
+
+var sorteerbutton = document.querySelector('section >  button:nth-of-type(2)');
+
+var sorteersection = document.querySelector('form > select');
+
+
+sorteerbutton.addEventListener('click', function(){
+   
+    sorteersection.classList.toggle('show');
+    
+});
+
+var zoekbutton = document.querySelector('header >  button');
+
+var zoekveld = document.querySelector('header');
+
+
+zoekbutton.addEventListener('click', function(){
+   
+    zoekveld.classList.toggle('iets');   
+});
 
 

@@ -19,8 +19,11 @@ main {
     grid-template-columns: 100%;
     margin-left: 2.18em;
     margin-right: 2.18em;
-
+     margin-left: auto;
+    margin-right: auto;
+    transition: 0.7s ease-out;
 }
+
 
 a {
     text-decoration: none;
@@ -31,16 +34,15 @@ article {
     border: 0.0625em;
     padding: 0.625em;
     border-color: gainsboro;
-    ;
+    
     border-style: solid;
-
     margin-bottom: 1em;
     margin: 1em;
-
     border-radius: 0.3125em;
     box-shadow: 0em 0.0625em 0.3125em gainsboro;
-    transition: 0.7sec;
+    transition:  0.7sec ease-out;
     min-width: 14em;
+    
 }
 
 article img {
@@ -99,6 +101,7 @@ h2 {
     padding-bottom: 2.5em;
     margin: 0;
     font-size: 2.25em;
+    min-height: 3em;
 }
 
 
@@ -116,7 +119,7 @@ body section:nth-child(2) h2 {
 h3 {
     font-family: "Pembroke-Medium", sans-serif;
     font-size: 1.5em;
-    margin-left: 1em;
+    margin-left: 0.8em;
     font-weight: bolder;
 }
 
@@ -162,7 +165,10 @@ p {
 
 
 
-article:hover {}
+article:hover {
+    transform: scale(1.04);
+}
+
 
 footer {
     font-size: 0.75em;
@@ -200,7 +206,7 @@ li a {
 }
 
 .verhaal {
-    content: url("/img/viewportsArtboard%203.jpg");
+    content: url("img/viewportsArtboard%203.jpg");
     width: 100%;
 }
 
@@ -216,10 +222,20 @@ li:hover {
     border-color: #f8db2d; */
 }
 
-@media(max-width: 37.5em) {
+input:invalid {
+    background-color: lightgray;
+}
+
+
+
+input:last-child {
+     background-color: #c1d4da;
+}
+
+@media(max-width: 42em) {
     .verhaal {
         width: 100%;
-        background-image: url("/img/Alzheimer%20Poster%20V2.jpg");
+        background-image: url("img/Alzheimer%20Poster%20V2.jpg");
     }
 
     .filter {
@@ -233,17 +249,21 @@ li:hover {
     }
 
     .verhaal {
-        content: url("/img/viewportsArtboard%205.jpg");
+        content: url("img/viewportsArtboard%205.jpg");
         width: 100%;
     }
     
     .zoeken {
     display: none;
 }
-
+    nav ul {
+justify-content: center;    
+    }
+    
+   
 }
 
-@media(min-width: 37.5em) and (max-width: 50em) {
+@media(min-width: 42em) and (max-width: 73em) {
     main {
         grid-template-columns: 50% 50%;
         margin-left: 4.12em;
@@ -287,11 +307,13 @@ li:hover {
     form fieldset:nth-child(3) {
         margin-left: 1.5em;
     }
+    
+   
 
 
 
 
-    h4:first-of-type {
+   main div {
         display: none;
         color: transparent;
         font-size: 0;
@@ -299,7 +321,7 @@ li:hover {
 
 
     .verhaal {
-        content: url("/img/viewportsArtboard%204.jpg");
+        content: url("img/viewportsArtboard%204.jpg");
         width: 100%;
     }
 
@@ -318,7 +340,7 @@ li:hover {
 
 
 
-@media(min-width: 50em) {
+@media(min-width: 73em) {
     main {
         grid-template-columns: 33% 33% 33%;
         margin-left: 11.25em;
@@ -368,14 +390,14 @@ li:hover {
         margin-left: 1.3em;
     }
 
-    h4:first-of-type {
+    main div {
         display: none;
         color: transparent;
         font-size: 0;
     }
 
     .verhaal {
-        content: url("/img/interatie%20animatie.gif");
+        content: url("img/interatie%20animatie.gif");
         width: 100%;
 
     }
@@ -387,15 +409,6 @@ li:hover {
     }
 
 }
-
-
-
-
-
-
-
-
-
 
 footer p {
     width: 100%;
@@ -419,6 +432,7 @@ legend {
 
 form button {
     margin: 0;
+    width: 100%;
     grid-column-start: 1;
     grid-column-end: 3;
 
@@ -563,6 +577,7 @@ form {
     border-color: gainsboro;
     border-radius: 0.25em;
     margin-top: 0.875em;
+    transition: 0.7sec;
 
 }
 
@@ -648,12 +663,8 @@ main h2 {
     color: #09173b;
 }
 
-h4 {
-    border-bottom: solid 0.5em;
-    color: #c1d4da;
-    width: 5em;
-    margin: auto;
-    margin-bottom: 2em;
+
+
 
 }
 
@@ -754,5 +765,86 @@ p img {
     height: 1.5em;
   
     object-fit: contain
+}
+
+
+
+main div {
+      border-bottom: solid 0.5em;
+    color: #c1d4da;
+    width: 15em;
+    margin: auto;
+    margin-bottom: 2em;
+}
+
+article p {
+    font-size: 0.8em;
+    
+}
+
+input {
+    margin: 0;
+    
+    
+}
+
+label {
+    margin-bottom: 0;
+}
+input:focus {
+     outline: none;
+    transform: scale(1.05);
+}
+
+
+header {
+    margin-top: -8em;
+    transition: margin 0.4s ease-out;
+}
+
+.show-search{
+    margin-top: 0em;
+}
+
+header > button {
+    width: 1em;
+    margin-right: 0.9em;;
+}
+
+button img {
+    object-fit:scale-down;
+}
+
+button:hover {
+    background-color: #c1d4da;
+}
+
+button:focus {
+    outline: none;
+}
+
+footer li:hover {
+    text-decoration: underline;
+}
+
+input:required:valid {
+    border-color: green;
+    background: url("img/tick-sign.svg") no-repeat 95% 50%;
+  background-size: 25px;
+}
+
+
+
+.show {
+    display: none;
+}
+
+.iets {
+    margin-top: 0;
+}
+
+header button:hover {
+    background-color: transparent;
+    transform: scale(1.04);
 }
 
