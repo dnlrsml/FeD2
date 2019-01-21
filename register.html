@@ -17,7 +17,7 @@
   
     <header>
     <section>
- <form action="/index.html" class="show-search">
+ <form action="/index.html">
       <input type="text" placeholder="Zoeken.." name="search">
       <button type="submit"></button>
         </form>
@@ -54,13 +54,13 @@
 
     </header>
 <main>
-<article class="loginfo">  
+<article>  
 
     <h2>Registreren</h2>
       
 
         
-       <form class="login">
+       <form>
        <label for="">Naam</label>
        <input type="text" placeholder="Naam" name="username" required>  
        <label for="">E-mail</label>
@@ -68,7 +68,8 @@
        <label for="">Gebruikersnaam</label>
         <input type="text" placeholder="Gebruikersnaam" name="username" required>  
         <label for="">Wachtwoord</label>
-        <input type="password" placeholder="Wachtwoord" name="wword" required> 
+        <p>(min. 6 karakters)</p>
+        <input type="password" placeholder="Wachtwoord" name="wword" minlength="6" required> 
            
            <a href="login.html" class="help">Al een account?</a>
           <input type="submit"> 
@@ -78,14 +79,14 @@
  
    
 </main>
-   <footer class="end">
-       <h5>Blijf In Contact</h5>
-       <ul class="contact">
-           <li><a href="">Facebook</a></li>
+    <footer>
+        <h4>Blijf In Contact</h4>
+        <ul>
+            <li><a href="">Facebook</a></li>
             <li><a href="">Twitter</a></li>
-             <li><a href="">Instagram</a></li>
-              <li><a href="">YouTube</a></li>
-       </ul>
+            <li><a href="">Instagram</a></li>
+            <li><a href="">YouTube</a></li>
+        </ul>
         <p>Foto's: ©Eurostar; ©Eurostar; ©Eurostar; ©Eurostar; ©Getty; ©Shutterstock; ©Shutterstock; ©Shutterstock;</p>
         <p> © 2018 Eurostar International Ltd. Alle rechten voorbehouden</p>
     </footer>

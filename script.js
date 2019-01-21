@@ -5,7 +5,7 @@
 /*eslint 'no-console': 0*/
 
 // Wanneer je scrollt wordt de functie uitgevoerd. 
-window.onscroll = function() {myFunction();};
+ window.onscroll = function() {myFunction();};
 
 function myFunction() {
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
@@ -28,7 +28,7 @@ filterbutton.addEventListener('click', function(){
 
 var sorteerbutton = document.querySelector('section >  button:nth-of-type(2)');
 
-var sorteersection = document.querySelector('form > select');
+var sorteersection = document.querySelector('body > form');
 
 
 sorteerbutton.addEventListener('click', function(){
@@ -46,5 +46,3 @@ zoekbutton.addEventListener('click', function(){
    
     zoekveld.classList.toggle('iets');   
 });
-
-

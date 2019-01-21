@@ -40,7 +40,7 @@ article {
     margin: 1em;
     border-radius: 0.3125em;
     box-shadow: 0em 0.0625em 0.3125em gainsboro;
-    transition:  0.7sec ease-out;
+    transition: 0.3s ease-out;
     min-width: 14em;
     
 }
@@ -78,6 +78,7 @@ img {
 
 header {
     background-color: #09173b;
+   
 }
 
 h1 {
@@ -123,7 +124,7 @@ h3 {
     font-weight: bolder;
 }
 
-h5 {
+h4 {
     font-family: 'Pembroke', sans-serif;
     font-size: 1.5em;
     font-weight: 400;
@@ -143,6 +144,7 @@ button {
     color: white;
     font-size: 1em;
     border: none;
+    transition: 0.3s;
 
 
 }
@@ -166,6 +168,7 @@ p {
 
 
 article:hover {
+    transition: 0.3s ease-out;
     transform: scale(1.04);
 }
 
@@ -238,7 +241,7 @@ input:last-child {
         background-image: url("img/Alzheimer%20Poster%20V2.jpg");
     }
 
-    .filter {
+    div form {
         grid-template-columns: 99%;
 
         display: block;
@@ -328,7 +331,7 @@ justify-content: center;
 
 
 
-    .filter {
+    div form {
         width: 90%;
         display: grid;
         grid-template-columns: 50% 50%;
@@ -402,11 +405,14 @@ justify-content: center;
 
     }
 
-    .filter {
+    div form {
         width: 90%;
         display: grid;
         grid-template-columns: 50% 50%;
     }
+    
+   
+ 
 
 }
 
@@ -514,58 +520,6 @@ section button:nth-child(2) {
     grid-column-start: 4;
 }
 
-
-/* section p:nth-child(n+3) {
-    position: absolute;
-}
-
-section p:nth-child(0) {
-    left: 4em;
-}
-
-section p:nth-child(1) {
-    left: 7em;
-    bottom: 4em;
-}
-
-section p:nth-child(2) {
-    left: 2em;
-    top: 40em;
-}
-
-section p:nth-child(3) {
-    left: 15em;
-    top: 57em;
-}
-
-section p:nth-child(4) {
-    left: 10em;
-    top: 70em;
-}
-
-section p:nth-child(5) {
-    left: 1em;
-    top: 85em
-}
-
-section p:nth-child(6) {
-    left: 19em;
-    top: 95em
-}
-
-section p:nth-child(7) {
-    left: 10em;
-    top: 120em
-}
-
-
-
-section article {
-    position: relative;
-    top: 120em;
-
-}
-*/
 form {
     display: flex;
     flex-direction: column;
@@ -577,7 +531,8 @@ form {
     border-color: gainsboro;
     border-radius: 0.25em;
     margin-top: 0.875em;
-    transition: 0.7sec;
+    transition: 0.7sec ease-out;
+    
 
 }
 
@@ -593,7 +548,7 @@ form input {
     background-color: #c1d4da;
     font-family: 'Pembroke', sans-serif;
     font-size: 1em;
-
+    
     margin-bottom: 1em;
     margin-top: 1em;
 }
@@ -692,12 +647,12 @@ body section button {
     object-fit: contain;
 }
 
-.login {
+article form {
     width: 15em;
     margin: auto;
 }
 
-.help {
+form a {
     font-family: 'Pembroke', sans-serif;
     margin: 0.5em;
 }
@@ -710,27 +665,27 @@ body section button {
     color: #09173b;
 }
 
-.contact {
+footer ul {
     display: flex;
     flex-direction: column;
 
 }
 
-.contact li {
+footer li {
     background: none;
     margin: 0;
 
 }
 
-.contact li a {
+footer li a {
     color: #2eb6c8;
 }
 
-.contact li:nth-of-type(4) {
+footer li:nth-of-type(4) {
     margin-left: 0;
 }
 
-.end {
+footer:last-of-type {
     margin-bottom: 0;
     margin-top: 5em;
 }
@@ -825,6 +780,7 @@ button:focus {
 
 footer li:hover {
     text-decoration: underline;
+    background-color: transparent;
 }
 
 input:required:valid {
@@ -839,6 +795,8 @@ input:required:valid {
     display: none;
 }
 
+
+
 .iets {
     margin-top: 0;
 }
@@ -847,4 +805,23 @@ header button:hover {
     background-color: transparent;
     transform: scale(1.04);
 }
+
+section form {
+    border-style: none;
+    margin: 0;
+   
+}
+
+article div {
+    border-bottom: none;
+}
+
+form p {
+    margin: 0;
+    margin-left: 1.2em;
+}
+
+
+
+
 
