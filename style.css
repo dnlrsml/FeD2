@@ -246,7 +246,7 @@ iput[type='submit']:hover {
 
     div form {
         grid-template-columns: 99%;
-
+    transition: 0.7s ease-out;
         display: block;
     }
 
@@ -338,7 +338,7 @@ justify-content: center;
         width: 90%;
         display: grid;
         grid-template-columns: 50% 50%;
-
+ transition: 0.7s ease-out;
     }
 
 
@@ -400,6 +400,7 @@ justify-content: center;
         display: none;
         color: transparent;
         font-size: 0;
+        
     }
 
     .verhaal {
@@ -411,6 +412,7 @@ justify-content: center;
     div form {
         width: 90%;
         display: grid;
+      transition: 0.7s ease-out;
         grid-template-columns: 50% 50%;
     }
     
@@ -867,6 +869,13 @@ div footer {
     
 }
 
+input:last-of-type:hover {
+    transform: scale(1.05);
+    background-color: #34405e;
+    color: white;
+    transition: 0.4s ease-out;
+    
+}
 
 
 
