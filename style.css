@@ -230,6 +230,12 @@ input:invalid {
 
 input:last-child {
      background-color: #c1d4da;
+    
+}
+
+iput[type='submit']:hover {
+    background-color: #525b75;
+    color: white;
 }
 
 @media(max-width: 42em) {
@@ -649,6 +655,7 @@ form a {
 footer ul {
     display: flex;
     flex-direction: column;
+    
 
 }
 
@@ -848,9 +855,19 @@ div p {
     padding: 0.5em;
     font-family: "Pembroke", sans-serif;
     color: black;
-
-
 }
+
+input:nth-child(9):invalid {
+    background-color: palevioletred;
+}
+
+div footer {
+ text-align: right;
+    margin: 1em;
+    
+}
+
+
 
 
 
