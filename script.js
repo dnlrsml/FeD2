@@ -19,12 +19,19 @@ var filterbutton = document.querySelector('section >  button:nth-of-type(1)');
 
 var filtersection = document.querySelector('div > form');
 
+var closebutton = document.querySelector('form > button');
+
 
 filterbutton.addEventListener('click', function(){
    
     filtersection.classList.toggle('show');
     
 });
+
+closebutton.addEventListener('click', function(){
+     filtersection.classList.toggle('show');
+});
+
 
 var sorteerbutton = document.querySelector('section >  button:nth-of-type(2)');
 
@@ -46,3 +53,14 @@ zoekbutton.addEventListener('click', function(){
    
     zoekveld.classList.toggle('iets');   
 });
+
+var favbtn = document.querySelector('article >  button');
+
+var message = document.querySelector('article > div');
+
+
+favbtn.addEventListener('click', function(){
+   
+    message.classList.toggle('show');   
+});
+
