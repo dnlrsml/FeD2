@@ -34,9 +34,10 @@ article {
     border: 0.0625em;
     padding: 0.625em;
     border-color: gainsboro;
-    
+    max-height: 26,75em;
     border-style: solid;
     margin-bottom: 1em;
+    min-height: 23em;
     margin: 1em;
     border-radius: 0.3125em;
     box-shadow: 0em 0.0625em 0.3125em gainsboro;
@@ -113,8 +114,8 @@ body section:nth-child(2) h2 {
 
 h3 {
     font-family: "Pembroke-Medium", sans-serif;
-    font-size: 1.5em;
-    margin-left: 0.8em;
+    font-size: 1.3em;
+    margin-left: 0;
     font-weight: bolder;
 }
 
@@ -314,7 +315,16 @@ justify-content: center;
         margin-left: 1.5em;
     }
     
-   
+    article {
+        max-height: 23.97em;
+    }
+    
+    article p:nth-child(n+3) {
+        position: relative;
+        top: -1em;
+    }
+    
+  
 
 
 
@@ -463,6 +473,14 @@ nav {
 
 }
 
+.rating2 {
+    width: 2em;
+    height: 2em;
+
+
+
+}
+
 .rating:nth-child(3) {
     transform: rotate(180deg);
 }
@@ -544,7 +562,9 @@ form input {
 
 
 article footer {
-    position: inherit;
+    position: relative;
+    bottom: 1em;
+    
 
 }
 
@@ -630,7 +650,30 @@ body section button {
     position: relative;
     margin-left: 3em;
     background: transparent;
+    transition: 0.7s;
+   
+    
 }
+
+.thumbs:hover {
+    background: transparent;
+    transform: scale(1.5);   
+}
+
+.rating:active{
+transform: scale(1.5);
+   background-color: palegreen;
+    border-radius: 100px;
+}
+
+
+.rating2:active{
+transform: scale(1.5);
+   background-color: red;
+    border-radius: 100px;
+}
+
+
 
 .balk {
     object-fit: contain;
@@ -677,7 +720,7 @@ footer li:nth-of-type(4) {
 
 footer:last-of-type {
     margin-bottom: 0;
-    margin-top: 5em;
+    margin-top: 2em;
 }
 
 .expand input[type=search] {
@@ -724,6 +767,8 @@ main div {
 
 article p {
     font-size: 0.8em;
+    margin: 0.3em;
+    
     
 }
 
@@ -844,7 +889,7 @@ select:focus {
 
 footer h3 {
     font-family: 'Pembroke', sans-serif;
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: 400;
     color: #34405e;
     margin: 0;
@@ -876,6 +921,9 @@ input:last-of-type:hover {
     transition: 0.4s ease-out;
     
 }
+
+
+
 
 
 
