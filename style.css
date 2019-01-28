@@ -664,6 +664,7 @@ body section button {
 transform: scale(1.5);
    background-color: palegreen;
     border-radius: 100px;
+     transition: 0.7s;
 }
 
 
@@ -671,6 +672,7 @@ transform: scale(1.5);
 transform: scale(1.5);
    background-color: red;
     border-radius: 100px;
+    transition: 0.7s;
 }
 
 
